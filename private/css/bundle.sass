@@ -8,25 +8,28 @@ body
 
     header
         width: 100%
-        min-height: 600px
-        height: auto
-        background: url(../images/banner.png) no-repeat
-        -webkit-background-size: contain
-        background-size: contain
+        .banner
+            width: 100%
+            position: relative
+            img
+                width: 100%
+            .web_version
+                position: absolute
+                top: 10
+                right: 20
 
-        .web_version
-            .pic
-                float: left
-                margin-right: 15px
-                margin-top: 3px
-            
-            float: right
-            a
-                color: #4283c0
-                text-decoration: underline
-                font-family: Arial
-                font-style: Regular
-                font-size: 12pt
+                .pic
+                    float: left
+                    margin-right: 15px
+                    margin-top: 3px
+                
+                float: right
+                a
+                    color: #4283c0
+                    text-decoration: underline
+                    font-family: Arial
+                    font-style: Regular
+                    font-size: 12pt
     .diagramms, .vopr
         padding: 50px 50px 40px 55px
 
@@ -73,12 +76,8 @@ body
             margin-top: 20px
     .questions
         .banner
-            width: 100%
-            min-height: 500px
-            height: auto
-            background: url(../images/aircraft_banner.png) no-repeat
-            -webkit-background-size: contain
-            background-size: contain
+            img
+                width: 100%
         .vopr
             h3
                 font-family: Arial
@@ -95,3 +94,102 @@ body
             .banner2
                 img
                     width: 100%
+    .result
+        .banner
+            img
+                width: 100%
+        .content
+            padding: 50px 50px 40px 55px
+            img
+                width: 100%
+            .legend
+                font-family: Arial
+                font-style: italic
+                font-size: 14pt
+                color: #999
+                text-align: center
+                margin-top: 20px
+            ul
+                li
+                    font-family: Arial,regular
+                    font-size: 14pt
+                    color: #444
+                    line-height: 3
+            h4
+                font-family: Arial
+                font-weight: bold
+                font-size: 22pt
+                text-align: center
+            .btn
+                width: 230px
+                margin: 0 auto
+                
+                text-align: center
+                background-color: #ffdb4d
+                border: none
+                height: 45px
+                line-height: 45px
+                font-family: Arial, Regular
+                font-size: 13pt
+                color: #000
+                border-radius: 4px
+                
+                &:hover
+                    cursor: pointer
+    .author
+        .banner
+            img
+                width: 100%
+        p
+            font-family: Arial, Regular
+            font-size: 16pt
+            color: #444444
+            
+        .social
+            width: 140px
+            height: auto
+            margin: 0 auto
+
+            a
+                img
+                    margin-top: 20px
+        .content
+            padding: 50px 50px 40px 55px
+            font-family: Arial, Regular
+            font-size: 16pt
+            line-height: 1.6
+    footer
+        padding: 50px 50px 40px 55px
+        .logo
+            text-align: center
+        p, h4
+            font-family: Arial
+            font-weight: bold
+            font-size: 16pt
+            text-align: center
+            line-height: 1.6
+        .social
+            text-align: center
+
+            a
+                img
+                    margin-left: 20px
+        .address
+            font-family: Arial, Regular
+            font-size: 14pt
+            text-align: center
+            line-height: 1.4
+            a
+                color: #4283c0
+                font-family: Arial, Regular
+                font-size: 14pt
+        .unsubscribe
+            p
+                font-family: Arial, Regular
+                font-size: 12pt
+                text-align: center
+                color: #999999
+            a
+                font-family: Arial, Regular
+                font-size: 12pt
+                color: #4283c0
